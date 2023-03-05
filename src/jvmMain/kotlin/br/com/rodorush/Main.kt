@@ -1,31 +1,31 @@
-import androidx.compose.material.MaterialTheme
+package br.com.rodorush
+
 import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
-import androidx.compose.material.Button
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
+import br.com.rodorush.extensions.loadImageBitmap
 
 @Composable
 @Preview
 fun App() {
-    //var text by remember { mutableStateOf("Hello, World!") }
     val largura = 300.0
+    val image = "https://m.media-amazon.com/images/M/MV5BMjMwMjUzNjc3Nl5BMl5BanBnXkFtZTgwOTk3MTQ3MjE@._V1_FMjpg_UX1000_.jpg"
 
     MaterialTheme {
         Column {
             Text(text = "Interestelar")
             Image(
-                painter = painterResource("capa.jpg"),
+                bitmap = image.loadImageBitmap(),
                 contentDescription = "Interestelar",
                 modifier = Modifier.width(largura.dp)
                     .height((largura*1.441).dp)
@@ -38,12 +38,6 @@ fun App() {
 
         }
     }
-
-//        Button(onClick = {
-//            text = "Hello, Desktop!"
-//        }) {
-//            Text(text)
-//        }
 }
 
 fun main() = application {
