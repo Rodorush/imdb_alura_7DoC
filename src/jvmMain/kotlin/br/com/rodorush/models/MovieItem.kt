@@ -1,4 +1,4 @@
-package br.com.rodorush.ui
+package br.com.rodorush.models
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -17,7 +17,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.com.rodorush.extensions.loadImageBitmap
-import br.com.rodorush.models.Movie
 
 @Composable
 fun MovieItem(movie: Movie) {
@@ -28,7 +27,7 @@ fun MovieItem(movie: Movie) {
         //horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Image(
-            bitmap = movie.imagem.loadImageBitmap(),
+            bitmap = movie.image.loadImageBitmap(),
             contentDescription = "Capa do filme",
             modifier = Modifier
                 //.width(largura.dp)
@@ -53,17 +52,17 @@ fun MovieItem(movie: Movie) {
                     modifier = Modifier.height(16.dp)
                 )
                 Text(
-                    text = movie.nota.toString(),
+                    text = movie.imDbRating.toString(),
                     modifier = Modifier.padding(start = 2.dp),
                     color = Color(0xffeeeeee),
                     fontSize = 14.sp,
                     fontWeight = FontWeight.Bold
                 )
             }
-            Text(movie.ano.toString(), fontSize = 14.sp, color = Color(0xffeeeeee))
+            Text(movie.year.toString(), fontSize = 14.sp, color = Color(0xffeeeeee))
         }
         Text(
-            text = movie.titulo, modifier = Modifier.padding(start = 16.dp, top = 8.dp, 16.dp),
+            text = movie.title, modifier = Modifier.padding(start = 16.dp, top = 8.dp, 16.dp),
             fontSize = 12.sp,
             textAlign = TextAlign.Center
         )

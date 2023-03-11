@@ -1,7 +1,7 @@
-package br.com.rodorush
+package br.com.rodorush.res.values
 
 import androidx.compose.material.darkColors
-import br.com.rodorush.MyColors
+import br.com.rodorush.res.values.MyColors
 
 object MyTheme {
     val colors = darkColors(

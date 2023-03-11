@@ -11,7 +11,7 @@ import androidx.compose.material.darkColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import br.com.rodorush.models.Movie
-import br.com.rodorush.ui.MovieItem
+import br.com.rodorush.models.MovieItem
 
 @Composable
 @Preview
@@ -28,28 +28,28 @@ fun App() {
             ) {
                 val movies = listOf(
                     Movie(
-                        titulo = "Interestellar",
-                        imagem = "https://m.media-amazon.com/images/M/MV5BMjMwMjUzNjc3Nl5BMl5BanBnXkFtZTgwOTk3MTQ3MjE@._V1_FMjpg_UX1000_.jpg",
-                        nota = 8.6.toBigDecimal(),
-                        ano = 2014
+                        title = "Interestellar",
+                        image = "https://m.media-amazon.com/images/M/MV5BMjMwMjUzNjc3Nl5BMl5BanBnXkFtZTgwOTk3MTQ3MjE@._V1_FMjpg_UX1000_.jpg",
+                        imDbRating = 8.6,
+                        year = 2014
                     ),
                     Movie(
-                        titulo = "Pulp Fiction: Tempo de Violência",
-                        imagem = "https://m.media-amazon.com/images/M/MV5BN2RiMTA1ZGQtOTNhYi00MjQyLTk0MzAtMWE1OTM2NWUxNzBkXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_FMjpg_UX1000_.jpg",
-                        nota = 8.9.toBigDecimal(),
-                        ano = 1994
+                        title = "Pulp Fiction: Tempo de Violência",
+                        image = "https://m.media-amazon.com/images/M/MV5BN2RiMTA1ZGQtOTNhYi00MjQyLTk0MzAtMWE1OTM2NWUxNzBkXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_FMjpg_UX1000_.jpg",
+                        imDbRating = 8.9,
+                        year = 1994
                     ),
                     Movie(
-                        titulo = "O Poderoso Chefão",
-                        imagem = "https://m.media-amazon.com/images/M/MV5BZjgwNzE5ODgtYzAyZC00YTZhLThhNDktMDVlOGNhYzk5NTVkXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_FMjpg_UX1000_.jpg",
-                        nota = 9.2.toBigDecimal(),
-                        ano = 1972
+                        title = "O Poderoso Chefão",
+                        image = "https://m.media-amazon.com/images/M/MV5BZjgwNzE5ODgtYzAyZC00YTZhLThhNDktMDVlOGNhYzk5NTVkXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_FMjpg_UX1000_.jpg",
+                        imDbRating = 9.2,
+                        year = 1972
                     ),
                     Movie(
-                        titulo = "O Resgate do Soldado Ryan",
-                        imagem = "https://m.media-amazon.com/images/M/MV5BMTYyMDRiNTQtNjY4NC00MWI1LWIyZTAtYjQ1ZDJjMjdkYzM0XkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_FMjpg_UX1000_.jpg",
-                        nota = 8.6.toBigDecimal(),
-                        ano = 1998
+                        title = "O Resgate do Soldado Ryan",
+                        image = "https://m.media-amazon.com/images/M/MV5BMTYyMDRiNTQtNjY4NC00MWI1LWIyZTAtYjQ1ZDJjMjdkYzM0XkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_FMjpg_UX1000_.jpg",
+                        imDbRating = 8.6,
+                        year = 1998
                     )
                 )
 

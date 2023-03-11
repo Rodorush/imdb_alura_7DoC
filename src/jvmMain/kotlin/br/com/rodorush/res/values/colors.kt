@@ -1,4 +1,4 @@
-package br.com.rodorush
+package br.com.rodorush.res.values
 
 import androidx.compose.ui.graphics.Color
 
