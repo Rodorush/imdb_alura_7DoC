@@ -52,7 +52,7 @@ fun MovieItem(movie: Movie) {
                     modifier = Modifier.height(16.dp)
                 )
                 Text(
-                    text = movie.imDbRating.toString(),
+                    text = movie.rating.toString(),
                     modifier = Modifier.padding(start = 2.dp),
                     color = Color(0xffeeeeee),
                     fontSize = 14.sp,
