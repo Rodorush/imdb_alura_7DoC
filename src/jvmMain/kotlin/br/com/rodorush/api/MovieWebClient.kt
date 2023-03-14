@@ -17,7 +17,6 @@ class MovieWebClient {
                 call: Call<Top250Data?>,
                 response: Response<Top250Data?>
             ) {
-                //println(response.body()?.string())
                 if (response.isSuccessful) {
                     response.body()?.let { data ->
                         val movies = data.items.map { detail ->
@@ -26,22 +25,9 @@ class MovieWebClient {
                         onSuccess(movies)
                     }
                 }
-//                val gson = Gson()
-//                val json = response.body()?.string()
-//                //println(json)
-//
-//                val top250Data = gson.fromJson(json, Top250Data::class.java)
-//                //println("My movies: ${top250Data.items}")
-//                val top250DataDetail: List<Top250DataDetail> = top250Data.items
-
             }
 
-            override fun onFailure(
-                call: Call<Top250Data?>,
-                t: Throwable
-            ) {
-
-            }
+            override fun onFailure(call: Call<Top250Data?>, t: Throwable) {}
         })
     }
 }

@@ -24,15 +24,13 @@ fun MovieItem(movie: Movie) {
         modifier = Modifier
             .width(200.dp)
             .padding(16.dp),
-        //horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Image(
+            //Tratar aqui Exception in thread "AWT-EventQueue-0" java.lang.IllegalArgumentException: Failed to Image::makeFromEncoded
             bitmap = movie.image.loadImageBitmap(),
             contentDescription = "Capa do filme",
             modifier = Modifier
-                //.width(largura.dp)
                 .fillMaxWidth()
-                //.height((largura * 1.441).dp)
                 .clip(RoundedCornerShape(4.dp))
         )
         Row(
@@ -42,7 +40,6 @@ fun MovieItem(movie: Movie) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Row(
-                //modifier = Modifier.padding(end = 48.dp)
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Icon(

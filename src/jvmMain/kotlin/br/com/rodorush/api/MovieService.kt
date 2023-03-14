@@ -1,7 +1,6 @@
 package br.com.rodorush.api
 
 import br.com.rodorush.data.Top250Data
-import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.GET
 

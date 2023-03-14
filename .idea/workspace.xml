@@ -6,16 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="137f9805-8bb3-4e50-831d-173be2939f1a" name="Changes" comment="">
       <changelist_data name="Rodolfo Pereira de Andrade" email="" />
-      <change afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/data/Top250Data.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/data/Top250DataDetail.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/App.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/api/MovieService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/api/MovieService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/api/MovieWebClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/api/MovieWebClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/api/RetrofitInit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/api/RetrofitInit.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/models/Movie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/models/Movie.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/data/Top250Data.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/data/Top250Data.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/models/MovieItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jvmMain/kotlin/br/com/rodorush/models/MovieItem.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -12,14 +12,13 @@ import br.com.rodorush.models.Movie
 fun main() = application {
     val movieWebClient = MovieWebClient()
     var movies: List<Movie> by remember {
-        mutableStateOf<List<Movie>>(emptyList())
+        mutableStateOf(emptyList())
     }
     movieWebClient.findTop250Movies {
         movies = it
     }
 
-    Window(title = "IMDB", onCloseRequest = ::exitApplication) {
+    Window(title = "Top 250 filmes IMDB", onCloseRequest = ::exitApplication) {
         App(movies)
-        //App()
     }
 }
